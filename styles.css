@@ -15,7 +15,7 @@
     --secondary-font: 'Herr Von Muellerhoff', cursive;
     --body-font: 'Cabin', sans-serif;
     --main-font-color-dark: #252525;
-    --secondary-font-color_2: #c59d5f;
+    --secondary-font-color_light:rgb(255, 209, 2)f;
     --secondary-font-color: #c55f5f;
     --body-font-color: #515151;
 }
@@ -309,15 +309,15 @@ header {
     line-height: 0.42;
 }
 
-.restaurant-info {
+.dogpark-info {
     text-align: center;
 }
 
-.restaurant-description {
+.dogpark-description {
     margin-bottom: 3rem;
 }
 
-.restaurant-description p {
+.dogpark-description p {
     line-height: 1.6;
     margin-bottom: 2.4rem;
 }
@@ -350,8 +350,8 @@ header {
     background-color: var(--main-font-color-dark);
 }
 
-/* Tasteful Recipes */
-.tasteful-recipes {
+/* Happy Doggos */
+.happy-doggos {
     background: url(images/happy-doggos.jpg) center no-repeat;
     background-size: cover;
 }
@@ -362,6 +362,12 @@ header {
     align-items: center;
 }
 
+/* Bookings Cover */
+.bookings-cover {
+    background: url(images/bookings-cover.jpg) center no-repeat;
+    background-size: cover;
+}
+
 /* Discover Our Place */
 .image-group {
     display: grid;
@@ -369,12 +375,12 @@ header {
     grid-gap: 1.5rem;
 }
 
-.discover-our-menu .restaurant-description {
+.discover-our-place .dogpark-description {
     padding-top: 3rem;
     margin-bottom: 0;
 }
 
-/* The Perfect Blend */
+/* The Perfect Paradise */
 .the-perfect-blend {
     background: url(images/perfect-paradise.jpg) center no-repeat;
     background-size: cover;
@@ -520,6 +526,7 @@ footer {
 
     .active {
         position: relative;
+        color: var(--secondary-font-color);
     }
 
     .active::before {
@@ -548,12 +555,12 @@ footer {
         max-width: 16.4rem;
     }
 
-    .restaurant-info {
+    .dogpark-info {
         display: flex;
         align-items: center;
     }
 
-    .restaurant-info > div {
+    .dogpark-info > div {
         flex: 1;
     }
 
