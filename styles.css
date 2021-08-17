@@ -298,6 +298,11 @@ header {
     margin: 2.4rem 0;
 }
 
+.global-headline .bottom-section {
+    text-align: center;
+    margin-top: 35rem;
+}
+
 .headline-dark {
     color: var(--main-font-color-dark);
     letter-spacing: 0.7rem;
@@ -366,6 +371,31 @@ header {
 .bookings-cover {
     background: url(images/bookings-cover.jpg) center no-repeat;
     background-size: cover;
+}
+
+/* Divider */
+.divider-wrapper
+{
+	padding-bottom: 20px;
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 20px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
 }
 
 /* Discover Our Place */
@@ -666,3 +696,11 @@ footer {
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
